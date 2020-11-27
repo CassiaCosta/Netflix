@@ -1,0 +1,162 @@
+:root {
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*elementos base*/
+
+body {
+    background: var(--preto);
+    font-family: Arial, Times, serif;
+    color: white;
+}
+
+header .container-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 34px;
+    width: 100px;
+    margin-top: 8px;
+    margin-left: 30px;
+}
+
+.menu-nav {
+    margin-left: 50px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+
+/*filme principal*/
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+.filme-principal-index {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/filmes/mulhermaravilha-capafundo.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal-series {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/series/tvd-capa-fundo2.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal-filmes {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/filmes/eclipse-capafundo.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal-infantil {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/infantil/reileao-capafundo.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal-index .descricao,
+.filme-principal-series .descricao,
+.filme-principal-filmes .descricao,
+.filme-principal-infantil .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal-index .titulo,
+.filme-principal-series .titulo,
+.filme-principal-filmes .titulo,
+.filme-principal-infantil .titulo {
+    margin-top: 8%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: rgb(128, 128, 128);
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal-index .container,
+.filme-principal-series .container,
+.filme-principal-filmes .container,
+.filme-principal-infantil .container {
+    width: 100%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
